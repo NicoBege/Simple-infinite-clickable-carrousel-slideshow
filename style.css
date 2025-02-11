@@ -1,0 +1,60 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrousel {
+  height: 50dvh;
+  width: 50dvw;
+  overflow: hidden;
+  border: solid 1px black;
+  display: flex;
+  flex-direction: row;
+}
+
+.cellule {
+  height: 100%;
+  min-width: 100%;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  font-weight: bold;
+  position: relative;
+  left: -100%;
+}
+
+.slide-right {
+  animation: slide-right 0.5s linear;
+}
+
+.slide-left {
+  animation: slide-left 0.5s linear;
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}/*# sourceMappingURL=style.css.map */
